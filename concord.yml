@@ -5,5 +5,5 @@ configuration:
   debug: true
 
 flows:
-  main:
+  default:
     - log: "Say hello to ${myName}"
