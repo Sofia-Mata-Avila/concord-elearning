@@ -4,7 +4,6 @@ configuration:
     myName: Sofia #Put your name here
   debug: true
 
-
 flows:
   default:
     - log: "Today's breakfast options include:"
@@ -15,5 +14,5 @@ flows:
           - Orange Juice
           - Toast and marmalade
 
-    breakfast:
-      - log: ${item}
+  breakfast:          
+    - log: ${item}
