@@ -1,0 +1,7 @@
+configuration:
+  runtime: "concord-v2"
+  arguments:
+    myName: Sofia #Put your name here
+  debug: true
+
+    - log: "Say hello to ${myName}"
