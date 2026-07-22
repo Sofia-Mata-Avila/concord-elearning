@@ -1,14 +1,15 @@
 configuration:
-  triggers:
-    - github:
-        version: 2
-        entryPoint: default
-        conditions:
-          type: "push"
   runtime: "concord-v2"
   arguments:
     myName: Sofia #Put your name here
   debug: true
+
+triggers:
+  - github:
+      version: 2
+      entryPoint: default
+      conditions:
+        type: "push"
 
 flows:
   default:
