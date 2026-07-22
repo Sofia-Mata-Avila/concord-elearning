@@ -6,4 +6,5 @@ configuration:
 
 flows:
   default:
-    - log: "Say hello to ${myName}"
+  - set:
+      myName: Concord
