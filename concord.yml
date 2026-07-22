@@ -4,7 +4,23 @@ configuration:
     myName: Sofia #Put your name here
   debug: true
 
+
 flows:
   default:
+  - log: "Say hello to ${myName}"
+
+  greet:
   - set:
       myName: Concord
+  - log: "Say hello to ${myName}"
+
+  math:
+    # calling a method
+    - ${myBean.someMethod()}
+    # calling a method with an argument
+    - ${myBean.someMethod(myContextArg)}
+    # literal values
+    - ${1 + 2}
+    # EL 3.0 extensions:
+    - ${[1, 2, 3].stream().map(x -> x + 1).toList()}
+  - log: "math function done"
